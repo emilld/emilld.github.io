@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.page {display: none}
+			body > input {display: none}
+			input#button:checked ~ #dropdown {
+			  display: block;
+			}
+			input#picOne:checked ~ main #p1 {
+			  display: block;
+			}
+			input#picTwo:checked ~ main #p2 {
+			  display: block;
+			}
+
+			main {height: 100%; width: 100%; margin: 0px;}
+
+			#p1 {
+			  background: url(http://i.imgur.com/Xxn0cUZ.jpg) no-repeat center center fixed;
+			  /*background: url(http://i.imgur.com/L62I0ze.jpg) no-repeat center center fixed;*/
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  
+			  -webkit-transition: opacity 1s ease-in-out;
+			  -moz-transition: opacity 1s ease-in-out;
+			  -o-transition: opacity 1s ease-in-out;
+			  transition: opacity 1s ease-in-out;
+			}
+
+			#p2 {
+			   /*background: url(http://i.imgur.com/Xxn0cUZ.jpg) no-repeat center center fixed;*/
+			  background: url(http://i.imgur.com/L62I0ze.jpg) no-repeat center center fixed;
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  
+			  -webkit-transition: opacity 1s ease-in-out;
+			  -moz-transition: opacity 1s ease-in-out;
+			  -o-transition: opacity 1s ease-in-out;
+			  transition: opacity 1s ease-in-out;
+			}
+
+			.page {
+			  position: relative;
+			  width: 100%;
+			  height: 100%;
+			  z-index: -10;
+			  margin: 0px;
+			  padding: 0px;
+			  
+			  animation: ;
+			}
+
+			.page_div {
+			  position: relative;
+			  height: 100%;
+			  width: 100%; 
+			}
+
+			html, body, main { 
+			  height: 100%;
+			  width: 100%;
+			  margin: 0;
+			  
+			  -webkit-animation: fadeIn 3s both;
+			  -moz-animation: fadeIn 3s both;
+			  -o-animation: fadeIn 3s both;
+			  animation: fadeIn 3s both;
+			  /*background: url(http://i.imgur.com/Xxn0cUZ.jpg) no-repeat center center fixed;
+			  background: url(http://i.imgur.com/L62I0ze.jpg) no-repeat center center fixed;
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;*/
+			}
+
+			#nav label{
+			  position: fixed;
+			  top: 10px;
+			  left: 50%;
+			  margin-left:-10px;
+			  height: 25px;
+			  width: 25px;
+			  background-color: #313A43;
+			  cursor: pointer;
+			  z-index: 5;
+			  border-radius: 100%;
+			  border: 2.5px solid #987B76;
+			  box-shadow: 0 0 5px 0 black;
+			}
+			  #nav label:hover {
+			    box-shadow: 0 0 15px 0 black;
+			    
+			    -webkit-animation: roundToBox 1s both;
+			    -moz-animation: roundToBox 1s both;
+			    -o-animation: roundToBox 1s both;
+			    animation: roundToBox 1s both;
+			  }
+
+			#dropdown {
+			  display: none;
+			  position: fixed;
+			  top: 42.5px;
+			  left: 50%;
+			  height: 70px;
+			  width: 600px;
+			  margin-left: -300px;
+			  background-color: #313A43;
+			  z-index: 5;
+			  border-radius:20px 20px 20px 20px;
+			  border: 2.5px solid #987B76;
+			  box-shadow: 0 0 5px 0 black;
+			  
+			  -webkit-animation: fadeIn 3s;
+			  -moz-animation: fadeIn 3s;
+			  -o-animation: fadeIn 3s;
+			  animation: fadeIn 3s;
+			}
+
+			  #dropdown:hover {
+			    box-shadow: 0 0 10px 0 black;
+			  }
+
+			#dropdown a {
+			  position: relative;
+			  top: -15px;
+			  opacity: 1;
+			  font-size:16px;
+			  font-family:Courier New, Courier;
+			  color:#909090;
+			  text-decoration:none;
+			  margin:0 10px;
+			}
+
+			#dropdown .alein *{
+			  display: inline-block;
+			}
+
+			#dropdown .alein {
+			  position:absolute;
+			  left:50%;
+			  top:50%;
+			  margin:-1.25em -300px; 
+			  height:1.2em;
+			  width:600px;
+			  display:block;
+			  text-align:center;
+			}
+
+			#dropdown .logo {
+			  width: 200px;
+
+			}
+
+			#dropdown .logo img {
+			  width: 100%;
+			  top:-15px;
+			}
+
+			/*pic tab*/
+			.tab {
+			  position: absolute;
+			  top: 30px;
+			  left: 20px;
+			  height: 30px;
+			  width: 20px;
+			  cursor: pointer;
+			  background-color: #141414;
+			  margin-right: 5px;
+			  border-radius: 0 0 10px 10px;
+			  box-shadow: inset 0 -5px 0 0 #262626,
+			    inset 0 -2px 0 0 #987B76;
+			}
+			  .tab:hover {
+			    height: 40px;
+			    background-color: #2b2b2b;
+			  } 
+
+			#tabOne {
+			  left: 20px;
+			}
+
+			#tabTwo {
+			  left: 45px;
+			}
+
+			/*animations*/
+
+			@keyframes fadeIn {
+			  from {
+			    opacity: 0;
+			  }
+			  to {
+			    opacity: 1;
+			  }
+			}
+
+			@-webkit-keyframes fadeIn {
+			  from {
+			    opacity: 0;
+			  }
+			  to {
+			    opacity: 1;
+			  }
+			}
+
+			@-moz-keyframes fadeIn {
+			  from {
+			    opacity: 0;
+			  }
+			  to {
+			    opacity: 1;
+			  }
+			}
+
+			@-o-keyframes fadeIn {
+			  from {
+			    opacity: 0;
+			  }
+			  to {
+			    opacity: 1;
+			  }
+			}
+
+			@keyframes roundToBox {
+			  0% {
+			    border-radius: 100%;
+			  }
+			  100%  {
+			    border-radius: 20%;
+			  }
+			}
+
+			@-webkit-keyframes roundToBox {
+			  0% {
+			    border-radius: 100%;
+			  }
+			  100%  {
+			    border-radius: 20%;
+			  }
+			}
+
+			@-moz-keyframes roundToBox {
+			  0% {
+			    border-radius: 100%;
+			  }
+			  100%  {
+			    border-radius: 20%;
+			  }
+			}
+
+			@-o-keyframes roundToBox {
+			  0% {
+			    border-radius: 100%;
+			  }
+			  100%  {
+			    border-radius: 20%;
+			  }
+			}
+
+
+		</style>
+	</head>
+	<body>
+	  <input name="nav" id="button" type="checkbox">
+	  <input name="nav" id="picOne" type="radio" checked="checked">
+	  <input name="nav" id="picTwo" type="radio">
+	  <div id="nav"><label for="button"></div>
+	  <div id="dropdown" class="">
+	    <div class="alein">
+	      <a href="#">Home</a>
+	      <a href="#">Pictures
+	        <label for="picOne"><div class="tab" id="tabOne">1</div>
+	        <label for="picTwo"><div class="tab" id="tabTwo">2</div>
+	      </a>
+	      <div class="logo">
+	        <img src="http://i.imgur.com/yp82tKe.png">
+	      </div>
+	      <a href="#">Albums</a>
+	      <a href="#">Contact</a>
+	    </div>
+	  </div>
+	  <main>
+	    <article class="page" id="p1">
+	      <div class="page_div" id="p1_div">
+	        <!--<img src="http://i.imgur.com/Xxn0cUZ.jpg">-->
+	      </div>
+	    </article>
+	    <article class="page" id="p2">
+	      <div class="page_div" id="p2_div">
+	        <!--<img src="http://i.imgur.com/L62I0ze.jpg">-->
+	      </div>
+	    </article>
+	  </main>
+	</body>
+</html>
