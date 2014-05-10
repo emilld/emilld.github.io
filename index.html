@@ -6,6 +6,10 @@
 			body > input {display: none}
 			input#button:checked ~ #dropdown {
 			  display: block;
+			  -webkit-animation: fadeIn 3s;
+			  -moz-animation: fadeIn 3s;
+			  -o-animation: fadeIn 3s;
+			  animation: fadeIn 3s;
 			}
 			input#picOne:checked ~ main #p1 {
 			  display: block;
@@ -115,10 +119,7 @@
 			  border: 2.5px solid #987B76;
 			  box-shadow: 0 0 5px 0 black;
 			  
-			  -webkit-animation: fadeIn 3s;
-			  -moz-animation: fadeIn 3s;
-			  -o-animation: fadeIn 3s;
-			  animation: fadeIn 3s;
+			  
 			}
 
 			  #dropdown:hover {
