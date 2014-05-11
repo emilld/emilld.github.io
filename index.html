@@ -23,9 +23,19 @@
 			}
 			input#picOne:checked ~ main #p1 {
 			  display: block;
+
+			  -webkit-animation: fadeIn 2s both;
+			  -moz-animation: fadeIn 2s both;
+			  -o-animation: fadeIn 2s both;
+			  animation: fadeIn 2s both;
 			}
 			input#picTwo:checked ~ main #p2 {
 			  display: block;
+
+			  -webkit-animation: fadeIn 2s both;
+			  -moz-animation: fadeIn 2s both;
+			  -o-animation: fadeIn 2s both;
+			  animation: fadeIn 2s both;
 			}
 
 			main {height: 100%; width: 100%; margin: 0px;}
@@ -38,10 +48,10 @@
 			  -o-background-size: cover;
 			  background-size: cover;
 			  
-			  -webkit-transition: opacity 1s ease-in-out;
+			  /*-webkit-transition: opacity 1s ease-in-out;
 			  -moz-transition: opacity 1s ease-in-out;
 			  -o-transition: opacity 1s ease-in-out;
-			  transition: opacity 1s ease-in-out;
+			  transition: opacity 1s ease-in-out;*/
 			}
 
 			#p2 {
@@ -52,10 +62,10 @@
 			  -o-background-size: cover;
 			  background-size: cover;
 			  
-			  -webkit-transition: opacity 1s ease-in-out;
+			  /*-webkit-transition: opacity 1s ease-in-out;
 			  -moz-transition: opacity 1s ease-in-out;
 			  -o-transition: opacity 1s ease-in-out;
-			  transition: opacity 1s ease-in-out;
+			  transition: opacity 1s ease-in-out;*/
 			}
 
 			.page {
@@ -79,11 +89,12 @@
 			  height: 100%;
 			  width: 100%;
 			  margin: 0;
+			  background-color: #CEDAE9;
 			  
-			  -webkit-animation: fadeIn 3s both;
-			  -moz-animation: fadeIn 3s both;
-			  -o-animation: fadeIn 3s both;
-			  animation: fadeIn 3s both;
+			  -webkit-animation: fadeIn 3s 1s both;
+			  -moz-animation: fadeIn 3s 1s both;
+			  -o-animation: fadeIn 3s 1s both;
+			  animation: fadeIn 3s 1s both;
 			  /*background: url(http://i.imgur.com/Xxn0cUZ.jpg) no-repeat center center fixed;
 			  background: url(http://i.imgur.com/L62I0ze.jpg) no-repeat center center fixed;
 			  -webkit-background-size: cover;
@@ -269,10 +280,6 @@
 			    border-radius: 20%;
 			  }
 			}
-
-
-
-
 		</style>
 	</head>
 	<body>
