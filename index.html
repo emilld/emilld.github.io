@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>ELD, billedkunst - eksamensprojekt</title>
+		<title>ELD - billedkunst</title>
 		<style>
 			.page {display: none}
 			body > input {display: none}
@@ -11,7 +11,6 @@
 			  -moz-animation: fadeIn 3s;
 			  -o-animation: fadeIn 3s;
 			  animation: fadeIn 3s;
-<<<<<<< HEAD
 			}
 			input#button:checked ~ #nav label {
 			  border-radius:20%;
@@ -19,8 +18,6 @@
 			  -moz-animation: roundToBox 1s both;
 			  -o-animation: roundToBox 1s both;
 			  animation: roundToBox 1s both;
-=======
->>>>>>> 4700eea8f67600eafab6c95be887ad518e7b78fd
 			}
 			input#picOne:checked ~ main #p1 {
 			  display: block;
@@ -28,9 +25,9 @@
 			input#picTwo:checked ~ main #p2 {
 			  display: block;
 			}
-
+			
 			main {height: 100%; width: 100%; margin: 0px;}
-
+			
 			#p1 {
 			  background: url(http://i.imgur.com/Xxn0cUZ.jpg) no-repeat center center fixed;
 			  /*background: url(http://i.imgur.com/L62I0ze.jpg) no-repeat center center fixed;*/
@@ -39,12 +36,12 @@
 			  -o-background-size: cover;
 			  background-size: cover;
 			  
-			  /*-webkit-transition: opacity 1s ease-in-out;
+			  -webkit-transition: opacity 1s ease-in-out;
 			  -moz-transition: opacity 1s ease-in-out;
 			  -o-transition: opacity 1s ease-in-out;
-			  transition: opacity 1s ease-in-out;*/
+			  transition: opacity 1s ease-in-out;
 			}
-
+			
 			#p2 {
 			   /*background: url(http://i.imgur.com/Xxn0cUZ.jpg) no-repeat center center fixed;*/
 			  background: url(http://i.imgur.com/L62I0ze.jpg) no-repeat center center fixed;
@@ -53,12 +50,12 @@
 			  -o-background-size: cover;
 			  background-size: cover;
 			  
-			  /*-webkit-transition: opacity 1s ease-in-out;
+			  -webkit-transition: opacity 1s ease-in-out;
 			  -moz-transition: opacity 1s ease-in-out;
 			  -o-transition: opacity 1s ease-in-out;
-			  transition: opacity 1s ease-in-out;*/
+			  transition: opacity 1s ease-in-out;
 			}
-
+			
 			.page {
 			  position: relative;
 			  width: 100%;
@@ -69,18 +66,17 @@
 			  
 			  animation: ;
 			}
-
+			
 			.page_div {
 			  position: relative;
 			  height: 100%;
 			  width: 100%; 
 			}
-
+			
 			html, body, main { 
 			  height: 100%;
 			  width: 100%;
 			  margin: 0;
-			  background-color: #CEDAE9;
 			  
 			  -webkit-animation: fadeIn 3s both;
 			  -moz-animation: fadeIn 3s both;
@@ -93,7 +89,7 @@
 			  -o-background-size: cover;
 			  background-size: cover;*/
 			}
-
+			
 			#nav label{
 			  position: fixed;
 			  top: 10px;
@@ -113,7 +109,7 @@
 			    
 			    
 			  }
-
+			
 			#dropdown {
 			  display: none;
 			  position: fixed;
@@ -130,11 +126,11 @@
 			  
 			  
 			}
-
+			
 			  #dropdown:hover {
 			    box-shadow: 0 0 10px 0 black;
 			  }
-
+			
 			#dropdown a {
 			  position: relative;
 			  top: -15px;
@@ -145,11 +141,11 @@
 			  text-decoration:none;
 			  margin:0 10px;
 			}
-
+			
 			#dropdown .alein *{
 			  display: inline-block;
 			}
-
+			
 			#dropdown .alein {
 			  position:absolute;
 			  left:50%;
@@ -160,17 +156,17 @@
 			  display:block;
 			  text-align:center;
 			}
-
+			
 			#dropdown .logo {
 			  width: 200px;
-
+			
 			}
-
+			
 			#dropdown .logo img {
 			  width: 100%;
 			  top:-15px;
 			}
-
+			
 			/*pic tab*/
 			.tab {
 			  position: absolute;
@@ -189,17 +185,17 @@
 			    height: 40px;
 			    background-color: #2b2b2b;
 			  } 
-
+			
 			#tabOne {
 			  left: 20px;
 			}
-
+			
 			#tabTwo {
 			  left: 45px;
 			}
-
+			
 			/*animations*/
-
+			
 			@keyframes fadeIn {
 			  from {
 			    opacity: 0;
@@ -208,7 +204,7 @@
 			    opacity: 1;
 			  }
 			}
-
+			
 			@-webkit-keyframes fadeIn {
 			  from {
 			    opacity: 0;
@@ -217,7 +213,7 @@
 			    opacity: 1;
 			  }
 			}
-
+			
 			@-moz-keyframes fadeIn {
 			  from {
 			    opacity: 0;
@@ -226,7 +222,7 @@
 			    opacity: 1;
 			  }
 			}
-
+			
 			@-o-keyframes fadeIn {
 			  from {
 			    opacity: 0;
@@ -235,7 +231,7 @@
 			    opacity: 1;
 			  }
 			}
-
+			
 			@keyframes roundToBox {
 			  0% {
 			    border-radius: 100%;
@@ -244,7 +240,7 @@
 			    border-radius: 20%;
 			  }
 			}
-
+			
 			@-webkit-keyframes roundToBox {
 			  0% {
 			    border-radius: 100%;
@@ -253,7 +249,7 @@
 			    border-radius: 20%;
 			  }
 			}
-
+			
 			@-moz-keyframes roundToBox {
 			  0% {
 			    border-radius: 100%;
@@ -262,7 +258,7 @@
 			    border-radius: 20%;
 			  }
 			}
-
+			
 			@-o-keyframes roundToBox {
 			  0% {
 			    border-radius: 100%;
@@ -271,38 +267,43 @@
 			    border-radius: 20%;
 			  }
 			}
+
+
 		</style>
 	</head>
 	<body>
-	  <input name="nav" id="button" type="checkbox">
-	  <input name="nav" id="picOne" type="radio" checked="checked">
-	  <input name="nav" id="picTwo" type="radio">
-	  <div id="nav"><label for="button"></div>
-	  <div id="dropdown" class="">
-	    <div class="alein">
-	      <a href="#">Home</a>
-	      <a href="#">Pictures
-	        <label for="picOne"><div class="tab" id="tabOne">1</div>
-	        <label for="picTwo"><div class="tab" id="tabTwo">2</div>
-	      </a>
-	      <div class="logo">
-	        <img src="http://i.imgur.com/yp82tKe.png">
-	      </div>
-	      <a href="#">Albums</a>
-	      <a href="#">Contact</a>
-	    </div>
-	  </div>
-	  <main>
-	    <article class="page" id="p1">
-	      <div class="page_div" id="p1_div">
-	        <!--<img src="http://i.imgur.com/Xxn0cUZ.jpg">-->
-	      </div>
-	    </article>
-	    <article class="page" id="p2">
-	      <div class="page_div" id="p2_div">
-	        <!--<img src="http://i.imgur.com/L62I0ze.jpg">-->
-	      </div>
-	    </article>
-	  </main>
-	</body>
+  		<input name="nav" id="button" type="checkbox">
+  		<input name="nav" id="picOne" type="radio" checked="checked">
+  		<input name="nav" id="picTwo" type="radio">
+  		<div id="nav"><label for="button"></div>
+  		<div id="dropdown" class="">
+    			<div class="alein">
+      				<a href="#">Home</a>
+				<a href="#">Pictures
+        				<label for="picOne"><div class="tab" id="tabOne">1</div>
+        				<label for="picTwo"><div class="tab" id="tabTwo">2</div>
+      				</a>
+      				<div class="logo">
+        				<img src="http://i.imgur.com/yp82tKe.png">
+      				</div>
+      				<a href="#">Albums</a>
+      				<a href="#">Contact</a>
+    			</div>
+  		</div>
+	 <main>
+    <article class="page" id="p1">
+      <div class="page_div" id="p1_div">
+        <!--<img src="http://i.imgur.com/Xxn0cUZ.jpg">-->
+      </div>
+    </article>
+    <article class="page" id="p2">
+      <div class="page_div" id="p2_div">
+        <!--<img src="http://i.imgur.com/L62I0ze.jpg">-->
+      </div>
+    </article>
+  </main>
+</body>
+
+
+
 </html>
